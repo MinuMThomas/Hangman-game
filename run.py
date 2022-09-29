@@ -34,46 +34,32 @@ def game_instructions():
         options = input('please select option: \n * Y - start \n * N - exit \n').upper()
         try:
             if not options.upper():
-                print('option must be alphabet')
+                print('must enter uppercase letter')
         except:
-            print('you must enter Y or N please try again')
-                         
+            print('you must enter Y or N please try again')                
         if options.upper() == "Y":
                 print('- The computer will generate random word and \n'
                 'you have to guess the letters in the word and have 6 chances. \n'
                 '- type the letter and hit enter button. \n'
                 '- if it is wrong guess you will loose a chance.\n'
                 '- Good Luck!')
-                yes_input = input('press enter go back to main menu')
+                yes_input = input('press enter to begin the game')
                 if yes_input == '':
-                    pass
+                    game()
                 else:
                     print('sorry you pressed wrong key')
         else:
             options.upper() == 'N'
             print('thanks for trying, please come back later')          
-            break 
-        
+            break       
 game_instructions()
 
+"""game function, enter letter check it is correct or not
+   count the wrong entry , show the result"""
+
+def game():
+    
 
 
 
-"""def game_instruction():
-    while True:
-print = ('welcome to play HANGMAN GAME \n *')
-print = ('please select option: \n *')
-print =  ('y - start \n *')
-print = ('n - exit \n')
-def start_game():  
-    options = None
-    options = input('enter your option: ')
-    if options == y:
-        print("Exiting the game")
-    elif options == n:
-            
-        print('start the game')
-    else:
-        print('invalid entry, please try again')    
-        
-start_game()"""
+
