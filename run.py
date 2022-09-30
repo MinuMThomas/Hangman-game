@@ -85,6 +85,8 @@ def hangman_game():
                 output += '_ '
         if output == word:
             break
+        print('===================================')
+        print('===================================')
         print("Guess the word: ",output)
         print(chances," chances left")
         guess = input().lower()
@@ -103,7 +105,8 @@ def hangman_game():
     if chances > 0:
         print("You guessed it right and you win!!!")
     else:
-        print("Sorry you guessed the wrong letter. Try again.")              
+        print("Sorry run out of chances. Try again.")
+        print("======================================")              
 
 
 """game instructions and option to enter the game
