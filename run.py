@@ -103,7 +103,7 @@ def hangman_game():
             print(grahicman[counting_hangman])
 
     if chances > 0:
-        print(f"You guessed it right, {word} !!!")
+        print(f"You guessed it right, the word is {word} !!!")
         print('======================================')
     else:
         print('Sorry run out of chances. Try again.')
