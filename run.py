@@ -114,26 +114,23 @@ def hangman_game():
  the options will give user to start or exit the game
  """
 def game_instructions():
-    global options
     
     while True:
-        options = input('please select option: \n  a - start \n  b - exit \n').isalpha()
+        options = input('please select option: \n * Y - start \n * N - exit \n').upper()
         try:
-            if options != ('a' 'b'):
-                print('must choose a or b')
-        except ValueError:
-            return False
-                      
-        if options == 'a':
+            if not options.upper():
+                print('must enter uppercase letter')
+        except:
+            print('you must enter Y or N please try again')                
+        if options.upper() == "Y":
                 print('- The computer will generate random word and \n'
-                'you have to guess the letters in the word and have 7 chances. \n'
+                'you have to guess the letters in the word and have 6 chances. \n'
                 '- type the letter and hit enter button. \n'
                 '- if it is wrong guess you will loose a chance.\n'
                 '- Good Luck!')
-                print('===================================')
                 hangman_game()
         else:
-            options == 'b'
+            options.upper() == 'N'
             print('thanks for trying, please come back later')          
             break       
 game_instructions()
