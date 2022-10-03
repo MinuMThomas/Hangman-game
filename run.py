@@ -117,17 +117,14 @@ def hangman_game():
 
 
 """game instructions and option to enter the game
- the options will give user to start or exit the game
+ the options will give user to start or exit the game until 
+ user's input is y or n.
  """
+
 def game_instructions():
     
     while True:
-        options = input('please select option: \n * Y - start \n * N - exit \n')
-        try:
-            if not options.upper():
-                print('must enter uppercase letter')
-        except:
-            print('you must enter Y or N please try again')                
+        options = input('please select option: \n * Y - start \n * N - exit \n')               
         if options.upper() == "Y":
                 print('- The computer will generate random word and \n'
                 'you have to guess the letters in the word and have 6 chances. \n'
@@ -135,8 +132,12 @@ def game_instructions():
                 '- if it is wrong guess you will loose a chance.\n'
                 '- Good Luck!')
                 hangman_game()
-        else:
-            options.upper() == 'N'
+        elif options.upper() == 'N':
             print('thanks for trying, please come back later')          
-            break       
+            break
+        else:
+            print('sorry please enter y or n')
+            continue      
 game_instructions()
+
+
