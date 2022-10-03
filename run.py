@@ -58,10 +58,16 @@ def hangman_image():
 begin the game with option to start and exit with welcome message"""
 
 def welcome_message():
-    while True:
-        name = input('Please enter your Name: \n ')
-        print(f'Hello {name}, Welcome to Hangman Game! \n')
-        break
+    print('██   ██  █████  ███    ██  ██████  ███    ███  █████  ███    ██')
+    print('██   ██ ██   ██ ████   ██ ██       ████  ████ ██   ██ ████   ██')
+    print('███████ ███████ ██ ██  ██ ██   ███ ██ ████ ██ ███████ ██ ██  ██') 
+    print('███████ ███████ ██ ██  ██ ██   ███ ██ ████ ██ ███████ ██ ██  ██')
+    print('██   ██ ██   ██ ██  ██ ██ ██    ██ ██  ██  ██ ██   ██ ██  ██ ██')
+    print('██   ██ ██   ██ ██   ████  ██████  ██      ██ ██   ██ ██   ████\n')
+                                                          
+    name = input('\n Please enter your Name:\n')    
+    print(f'Hello {name}, Welcome to Hangman Game! \n')
+        
 welcome_message()
 
 def hangman_game():
@@ -116,7 +122,7 @@ def hangman_game():
 def game_instructions():
     
     while True:
-        options = input('please select option: \n * Y - start \n * N - exit \n').upper()
+        options = input('please select option: \n * Y - start \n * N - exit \n')
         try:
             if not options.upper():
                 print('must enter uppercase letter')
