@@ -1,4 +1,6 @@
 import random
+
+
 # Hangman Game
 """ 
 - begin the game with options - start , exit
@@ -9,8 +11,15 @@ import random
 -if wrong continue loop until no of try
 -if all correct - break
 """
-#hangman graghic with different stages for number of guess 
+
+
 def hangman_image():
+
+
+    """
+    hangman graghic with different stages for number of guess
+    """
+
     global grahicman
     grahicman = ['''
      +---+
@@ -53,11 +62,12 @@ def hangman_image():
 
 
 
-"""game function, enter letter check it is correct or not
-   count the wrong entry , show the result
-begin the game with option to start and exit with welcome message"""
-
 def welcome_message():
+
+
+    """welcome message along with entering user name input"""
+
+
     print('██   ██  █████  ███    ██  ██████  ███    ███  █████  ███    ██')
     print('██   ██ ██   ██ ████   ██ ██       ████  ████ ██   ██ ████   ██')
     print('███████ ███████ ██ ██  ██ ██   ███ ██ ████ ██ ███████ ██ ██  ██') 
@@ -70,10 +80,30 @@ def welcome_message():
         
 welcome_message()
 
+
 def hangman_game():
-    
-    words_list = ['happy', 'winter','dublin','buzz','ring','python','quartz','jogging','jiujitsu','queue','galaxy','fancy',
-    'frazzled','syndrome','awkward']
+
+
+    """
+    game function, enter letter check it is correct or not
+    count the wrong entry , show the result
+    begin the game with option to start and exit with welcome message"""
+
+    words_list = ['happy', 
+        'winter',
+        'dublin',
+        'buzz',
+        'ring',
+        'python',
+        'quartz',
+        'jogging',
+        'jiujitsu',
+        'queue',
+        'galaxy',
+        'fancy',
+        'frazzled',
+        'syndrome',
+        'awkward']
 
     word = random.choice(words_list).upper()
     global grahicman
@@ -96,6 +126,7 @@ def hangman_game():
         print('Guess the word: ',output)
         print(chances," lives left")
         guess = input().upper()
+
         if guess in guessed_letters or guess in wrong_guess:
             print('Already guessed', guess)
         elif guess in word:
@@ -116,19 +147,21 @@ def hangman_game():
         print('======================================')              
 
 
-"""game instructions and option to enter the game
- the options will give user to start or exit the game until 
- user's input is y or n.
- """
-
 def game_instructions():
-    
+
+
+    """
+    game instructions and option to enter the game
+    the options will give user to start or exit the game until 
+    user's input is y or n.
+    """
+
     while True:
         options = input('please select option: \n * Y - start \n * N - exit \n')               
         if options.upper() == "Y":
                 print('- The computer will generate random word and \n'
                 'you have to guess the letters in the word and have 6 chances. \n'
-                '- type the letter and hit enter button. \n'
+                '- type the alphabet in the word and hit enter button. \n'
                 '- if it is wrong guess you will loose a chance.\n'
                 '- Good Luck!')
                 hangman_game()
