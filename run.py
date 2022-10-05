@@ -102,14 +102,14 @@ def list_of_words():
         print("\n you choose 'EASY' level")
         word = random.choice(word_easy).upper()
         
-    elif level_of_difficulty == 'MEDIYUM':
+    elif level_of_difficulty == 'MEDIUM':
         print("\n you choose 'MEDIUM' level")
         word = random.choice(word_medium).upper()
     elif level_of_difficulty == 'HARD':
         print("\n you choose 'HARD' level")
         word = random.choice(word_hard).upper()
     else:
-        print('\n Enter the level in BIG letters!!\n')
+        print('\n Enter the level in CAPITAL letters!!\n')
         print('==================================')
         list_of_words()
 
@@ -173,7 +173,7 @@ def game_instructions():
     """
     game instructions and option to enter the game
     the options will give user to start or exit the game until 
-    user's input is y or n.
+    user's input is YES or NO.
     """
 
     while True:
@@ -192,7 +192,7 @@ def game_instructions():
             print('\n Thanks for trying, please come back later\n')          
             break
         else:
-            print('\n Sorry please enter YES or NO in big letters')
+            print('\n Sorry please enter YES or NO in CAPITAL letters')
             continue      
 
 
