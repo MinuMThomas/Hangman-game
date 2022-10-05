@@ -83,9 +83,6 @@ def list_of_words():
     user can choose level to play
     """
     global word
-    words_list = ['happy', 'winter', 'dublin', 'buzz', 'ring', 'python',
-                  'quartz', 'jogging', 'jiujitsu', 'queue', 'galaxy',
-                  'fancy', 'frazzled', 'syndrome', 'awkward']
 
     word_easy = ['baby', 'back', 'bad', 'bag', 'ball''call', 'can', 
                  'candle', 'cap', 'car', 'card', 'care', 'ear', 'early',
@@ -97,22 +94,24 @@ def list_of_words():
                  'unforeseen', 'glamorous', 'vengeance', 'optimistic', 
                  'noticeable', 'vengeance', 'consensus', 'recollection']
     
-    print ('Pease choose a level and enter it to begin the game !!'
-           '* Easy\n * Medium\n *Hard \n')
+    print('Please choose a level and enter it to begin the game !!\n'
+          '\n* EASY\n \n* MEDIUM\n \n* HARD \n')
     level_of_difficulty = input('\n')
     
-    if level_of_difficulty == 'Easy':
-        print ('you choose easy word list')
+    if level_of_difficulty == 'EASY':
+        print("\nyou choose level of diffiulty 'EASY'")
         word = random.choice(word_easy).upper()
         
-    elif level_of_difficulty == 'Medium':
-        print ('you choose medium diffiulty word')
+    elif level_of_difficulty == 'MEDIYUM':
+        print("\nyou choose level of diffiulty 'MEDIUM'")
         word = random.choice(word_medium).upper()
-    elif level_of_difficulty == 'Hard':
-        print ("you choose levl diffiulty 'hard' ")
+    elif level_of_difficulty == 'HARD':
+        print("\nyou choose level of diffiulty 'hard' ")
         word = random.choice(word_hard).upper()
     else:
-        word = random.choice(words_list).upper()
+        print('\nEnter the level in BIG letters!!\n')
+        print('==================================')
+        list_of_words()
 
 
 def hangman_game():
