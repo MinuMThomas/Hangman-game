@@ -141,10 +141,10 @@ def hangman_game():
             break
         print('===================================')
         print('===================================')
-        print('Guess the word: ', output)
-        print(chances, " lives left")
+        print(' Guess the word: ', output)
+        print(chances, 'lives left')
         
-        guess = input().upper()
+        guess = input(" ").upper()
         
         if len(guess) != 1:
             print(' Please enter only one letter.')
@@ -178,7 +178,7 @@ def game_instructions():
 
     while True:
         options = input(' please select option:\n\n' 
-                        '* YES - start \n\n * NO - exit\n\n')               
+                        '* YES - start \n\n* NO - exit\n\n')               
         if options == "YES":
             print(' - The computer will generate random word \n\n'
                   ' - you have to guess the letters in the word\n\n'
