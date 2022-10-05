@@ -76,6 +76,45 @@ def welcome_message():
 welcome_message()
 
 
+def list_of_words():
+
+    """
+    list of words included with four types easy,  medium and hard
+    user can choose level to play
+    """
+    global word
+    words_list = ['happy', 'winter', 'dublin', 'buzz', 'ring', 'python',
+                  'quartz', 'jogging', 'jiujitsu', 'queue', 'galaxy',
+                  'fancy', 'frazzled', 'syndrome', 'awkward']
+
+    word_easy = ['baby', 'back', 'bad', 'bag', 'ball''call', 'can', 
+                 'candle', 'cap', 'car', 'card', 'care', 'ear', 'early',
+                 'earn', 'earth', 'east', 'easy', 'jelly', 'job', 'join']
+    word_medium = ['force', 'foreign', 'forest', 'forget', 'forgive', 'example'
+                   'except', 'excited', 'exercise', 'expect', 'develop', 'die',
+                   'different', 'difficult', 'dinner', 'direction']
+    word_hard = ['chronological', 'lacrosse', 'copyright', 'glamorous', 
+                 'unforeseen', 'glamorous', 'vengeance', 'optimistic', 
+                 'noticeable', 'vengeance', 'consensus', 'recollection']
+    
+    print ('Pease choose a level and enter it to begin the game !!'
+           '* Easy\n * Medium\n *Hard \n')
+    level_of_difficulty = input('\n')
+    
+    if level_of_difficulty == 'Easy':
+        print ('you choose easy word list')
+        word = random.choice(word_easy).upper()
+        
+    elif level_of_difficulty == 'Medium':
+        print ('you choose medium diffiulty word')
+        word = random.choice(word_medium).upper()
+    elif level_of_difficulty == 'Hard':
+        print ("you choose levl diffiulty 'hard' ")
+        word = random.choice(word_hard).upper()
+    else:
+        word = random.choice(words_list).upper()
+
+
 def hangman_game():
 
     """
@@ -84,24 +123,6 @@ def hangman_game():
     begin the game with option to start and exit with welcome message
     """
 
-    words_list = [
-        'happy',
-        'winter',
-        'dublin',
-        'buzz',
-        'ring',
-        'python',
-        'quartz',
-        'jogging',
-        'jiujitsu',
-        'queue',
-        'galaxy',
-        'fancy',
-        'frazzled',
-        'syndrome',
-        'awkward']
-
-    word = random.choice(words_list).upper()
     global graphic_man
     hangman_image()
     guessed_letters = []
@@ -109,6 +130,7 @@ def hangman_game():
     chances = 7
     counting_hangman = -1
     alphabet = input
+    
     while chances > 0:
         output = ''
         for alphabet in word:
@@ -165,6 +187,7 @@ def game_instructions():
                   '- you have 6 chances\n\n'
                   '- if it is wrong guess you will loose a chance\n\n'
                   '- Good Luck!\n')
+            list_of_words()
             hangman_game()
         elif options == 'NO':
             print('\n Thanks for trying, please come back later\n')          
