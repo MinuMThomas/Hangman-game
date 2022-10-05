@@ -94,22 +94,22 @@ def list_of_words():
                  'unforeseen', 'glamorous', 'vengeance', 'optimistic', 
                  'noticeable', 'vengeance', 'consensus', 'recollection']
     
-    print('Please choose a level and enter it to begin the game !!\n'
+    print(' Please choose a level and enter it to begin the game !!\n'
           '\n* EASY\n \n* MEDIUM\n \n* HARD \n')
     level_of_difficulty = input('\n')
     
     if level_of_difficulty == 'EASY':
-        print("\nyou choose level of diffiulty 'EASY'")
+        print("\n you choose 'EASY' level")
         word = random.choice(word_easy).upper()
         
     elif level_of_difficulty == 'MEDIYUM':
-        print("\nyou choose level of diffiulty 'MEDIUM'")
+        print("\n you choose 'MEDIUM' level")
         word = random.choice(word_medium).upper()
     elif level_of_difficulty == 'HARD':
-        print("\nyou choose level of diffiulty 'hard' ")
+        print("\n you choose 'HARD' level")
         word = random.choice(word_hard).upper()
     else:
-        print('\nEnter the level in BIG letters!!\n')
+        print('\n Enter the level in BIG letters!!\n')
         print('==================================')
         list_of_words()
 
@@ -147,24 +147,24 @@ def hangman_game():
         guess = input().upper()
         
         if len(guess) != 1:
-            print('Please enter only one letter.')
+            print(' Please enter only one letter.')
         elif guess in guessed_letters or guess in wrong_guess:
-            print('Already guessed', guess)
+            print(' Already guessed', guess)
         elif guess in word:
-            print('Awesome Job! You guessed the correct letter!\n')
+            print(' Awesome Job! You guessed the correct letter!\n')
             guessed_letters.append(guess)
         else:
-            print('Sorry! You have guessed a wrong letter!')
+            print(' Sorry! You have guessed a wrong letter!')
             counting_hangman = counting_hangman + 1
             chances = chances-1
             wrong_guess.append(guess)
             print(graphic_man[counting_hangman])
 
     if chances > 0:
-        print(f"You guessed it right, the word is {word} !!!")
+        print(f" You guessed it right, the word is {word} !!!")
         print('======================================')
     else:
-        print('Sorry run out of chances. Try again.')
+        print(' Sorry run out of chances. Try again.')
         print('======================================')              
 
 
@@ -177,22 +177,22 @@ def game_instructions():
     """
 
     while True:
-        options = input('please select option:\n\n' 
+        options = input(' please select option:\n\n' 
                         '* YES - start \n\n * NO - exit\n\n')               
         if options == "YES":
-            print('- The computer will generate random word \n\n'
-                  '- you have to guess the letters in the word\n\n'
-                  '- type the alphabet in the word and hit enter button\n\n'
-                  '- you have 6 chances\n\n'
-                  '- if it is wrong guess you will loose a chance\n\n'
-                  '- Good Luck!\n')
+            print(' - The computer will generate random word \n\n'
+                  ' - you have to guess the letters in the word\n\n'
+                  ' - type the alphabet in the word and hit enter button\n\n'
+                  ' - you have 6 chances\n\n'
+                  ' - if it is wrong guess you will loose a chance\n\n'
+                  ' - Good Luck!\n')
             list_of_words()
             hangman_game()
         elif options == 'NO':
             print('\n Thanks for trying, please come back later\n')          
             break
         else:
-            print('\n Sorry please enter YES or NO')
+            print('\n Sorry please enter YES or NO in big letters')
             continue      
 
 
