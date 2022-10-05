@@ -19,8 +19,8 @@ def hangman_image():
     hangman graghic with different stages for number of guess
     """
 
-    global grahicman
-    grahicman = ['''
+    global graphic_man
+    graphic_man = ['''
      +---+
         |
         |
@@ -102,7 +102,7 @@ def hangman_game():
         'awkward']
 
     word = random.choice(words_list).upper()
-    global grahicman
+    global graphic_man
     hangman_image()
     guessed_letters = []
     wrong_guess = []
@@ -133,7 +133,7 @@ def hangman_game():
             counting_hangman = counting_hangman + 1
             chances = chances-1
             wrong_guess.append(guess)
-            print(grahicman[counting_hangman])
+            print(graphic_man[counting_hangman])
 
     if chances > 0:
         print(f"You guessed it right, the word is {word} !!!")
