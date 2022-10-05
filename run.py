@@ -108,6 +108,7 @@ def hangman_game():
     wrong_guess = []
     chances = 7
     counting_hangman = -1
+    alphabet = input
     while chances > 0:
         output = ''
         for alphabet in word:
@@ -121,9 +122,12 @@ def hangman_game():
         print('===================================')
         print('Guess the word: ', output)
         print(chances, " lives left")
+        
         guess = input().upper()
-
-        if guess in guessed_letters or guess in wrong_guess:
+        
+        if len(guess) != 1:
+            print('Please enter only one letter.')
+        elif guess in guessed_letters or guess in wrong_guess:
             print('Already guessed', guess)
         elif guess in word:
             print('Awesome Job! You guessed the correct letter!\n')
