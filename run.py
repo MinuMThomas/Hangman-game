@@ -68,7 +68,7 @@ def welcome_message():
     print('███████ ███████ ██ ██  ██ ██   ███ ██ ████ ██ ███████ ██ ██  ██')
     print('██   ██ ██   ██ ██  ██ ██ ██    ██ ██  ██  ██ ██   ██ ██  ██ ██')
     print('██   ██ ██   ██ ██   ████  ██████  ██      ██ ██   ██ ██   ████\n')
-                                                          
+
     name = input('\n Please enter your Name:\n')    
     print(f'Hello {name}, Welcome to Hangman Game! \n')
 
@@ -152,21 +152,21 @@ def game_instructions():
     """
 
     while True:
-        options = input('please select option:\n' 
-                        '* YES - start \n * NO - exit\n')               
+        options = input('please select option:\n\n' 
+                        '* YES - start \n\n * NO - exit\n\n')               
         if options == "YES":
-            print('- The computer will generate random word \n'
-                  '- you have to guess the letters in the word\n'
-                  '- type the alphabet in the word and hit enter button. \n'
-                  '- you have 6 chances \n'
-                  '- if it is wrong guess you will loose a chance.\n'
-                  '- Good Luck!')
+            print('- The computer will generate random word \n\n'
+                  '- you have to guess the letters in the word\n\n'
+                  '- type the alphabet in the word and hit enter button\n\n'
+                  '- you have 6 chances\n\n'
+                  '- if it is wrong guess you will loose a chance\n\n'
+                  '- Good Luck!\n')
             hangman_game()
         elif options == 'NO':
-            print('thanks for trying, please come back later')          
+            print('\n Thanks for trying, please come back later\n')          
             break
         else:
-            print('sorry please enter YES or NO')
+            print('\n Sorry please enter YES or NO')
             continue      
 
 
