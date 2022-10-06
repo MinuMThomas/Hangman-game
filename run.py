@@ -182,12 +182,12 @@ def hangman_game():
             print(graphic_man[counting_hangman])
         elif guess in word:
             clear_window()
-            print(' Awesome Job! You guessed the correct letter!\n')
+            print(' \nAwesome Job! You guessed the correct letter!\n')
             guessed_letters.append(guess)
             print(graphic_man[counting_hangman])
         else:
             clear_window()
-            print(' Sorry! You have guessed a wrong letter!')
+            print(' \nSorry! You have guessed a wrong letter!\n')
             counting_hangman = counting_hangman + 1
             chances = chances-1
             wrong_guess.append(guess)
@@ -200,7 +200,7 @@ def hangman_game():
         restart_game()
         clear_window()
     else:
-        print(' Sorry run out of chances. Try again.')
+        print(' Sorry! run out of chances. Try again.')
         print('======================================\n')
         time.sleep(1)
         restart_game()
