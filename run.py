@@ -1,4 +1,5 @@
 import random
+import os
 
 
 def hangman_image():
@@ -48,6 +49,13 @@ def hangman_image():
       ===== """]
 
 
+def clear_window():
+    """
+    Clears the game window
+    """
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
 def welcome_message():
 
     """welcome message along with entering user name input"""
@@ -59,8 +67,14 @@ def welcome_message():
     print(' ██   ██ ██   ██ ██  ██ ██ ██    ██ ██  ██  ██ ██   ██ ██  ██ ██')
     print(' ██   ██ ██   ██ ██   ████  ██████  ██      ██ ██   ██ ██   ████\n')
 
-    name = input('\n Please enter your Name:\n')
-    print(f'Hello {name}, Welcome to Hangman Game! \n')
+    while True:
+        name = input('\n Please enter your Name:\n')
+        clear_window()
+        if not name.isalpha():
+            print(' Please enter a name')
+        else:
+            print(f'Hello {name}, Welcome to Hangman Game! \n')
+            break
 
 
 welcome_message()
@@ -85,7 +99,7 @@ def list_of_words():
                  'noticeable', 'vengeance', 'consensus', 'recollection']
     print(' Please choose a level and enter it to begin the game !!\n'
           '\n* EASY\n \n* MEDIUM\n \n* HARD \n')
-    level_of_difficulty = input('\n')
+    level_of_difficulty = input.lower('\n')
     if level_of_difficulty == 'EASY':
         print("\n you choose 'EASY' level")
         word = random.choice(word_easy).upper()
@@ -99,6 +113,24 @@ def list_of_words():
         print('\n Enter the level in CAPITAL letters!!\n')
         print('==================================')
         list_of_words()
+
+
+def restart_game():
+
+    """
+    function for restart the game
+    if user wants to play game then enter yes or
+    any other key to exit and game will exit
+    """
+
+    print("\n Would you like to play again?")
+    play_again = input(
+        "Please enter YES to play, any other key to exit the game \n")
+    if play_again.lower() == "yes":
+        game_instructions()
+    else:
+        print("Thank you for playing the game")
+        exit()
 
 
 def hangman_game():
@@ -126,12 +158,13 @@ def hangman_game():
         if output == word:
             break
         print('===================================')
-        print('===================================')
         print(' Guess the word: ', output)
         print(chances, 'lives left')
         guess = input(" ").upper()
         if len(guess) != 1:
             print(' Please enter only one letter.')
+        elif not guess.isalpha():
+            print(' Please enter only alphabet')    
         elif guess in guessed_letters or guess in wrong_guess:
             print(' Already guessed', guess)
         elif guess in word:
@@ -147,9 +180,11 @@ def hangman_game():
     if chances > 0:
         print(f" You guessed it right, the word is {word} !!!")
         print('======================================')
+        restart_game()
     else:
         print(' Sorry run out of chances. Try again.')
         print('======================================')
+        restart_game()
 
 
 def game_instructions():
@@ -161,9 +196,14 @@ def game_instructions():
     """
 
     while True:
-        options = input(' please select option:\n\n'
-                        '* YES - start \n\n* NO - exit\n\n')
-        if options == "YES":
+        options = input(' please select an option:\n\n'
+                        '* 1 - Start \n* 2 - Instructions\n'
+                        '* 3 - Exit \n\n')
+        if options == '1':
+            list_of_words()
+            hangman_game()
+        elif options == '2':
+            print('\n Game Instructions')    
             print(' - The computer will generate random word \n\n'
                   ' - you have to guess the letters in the word\n\n'
                   ' - type the alphabet in the word and hit enter button\n\n'
@@ -172,12 +212,11 @@ def game_instructions():
                   ' - Good Luck!\n')
             list_of_words()
             hangman_game()
-        elif options == 'NO':
+        elif options == '3':
             print('\n Thanks for trying, please come back later\n')
             break
         else:
-            print('\n Sorry please enter YES or NO in CAPITAL letters')
-            continue
+            print('\n Sorry please enter 1, 2 or 3')
 
 
 game_instructions()
