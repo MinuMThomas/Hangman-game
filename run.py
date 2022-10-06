@@ -11,7 +11,7 @@ def hangman_image():
     global graphic_man
 
     graphic_man = ["""
-     +---+
+    +---+
         |
         |
         |
