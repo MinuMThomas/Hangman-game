@@ -1,5 +1,7 @@
 import random
 import os
+import time
+import sys
 
 
 def hangman_image():
@@ -97,21 +99,25 @@ def list_of_words():
     word_hard = ['chronological', 'lacrosse', 'copyright', 'glamorous',
                  'unforeseen', 'glamorous', 'vengeance', 'optimistic',
                  'noticeable', 'vengeance', 'consensus', 'recollection']
-    print(' Please choose a level and enter it to begin the game !!\n'
+    print(' \nPlease choose a level and enter it to begin the game !!\n'
           '\n* EASY\n \n* MEDIUM\n \n* HARD \n')
-    level_of_difficulty = input.lower('\n')
-    if level_of_difficulty == 'EASY':
+    level_of_difficulty = input('\n').lower()
+    if level_of_difficulty == 'easy':
         print("\n you choose 'EASY' level")
         word = random.choice(word_easy).upper()
-    elif level_of_difficulty == 'MEDIUM':
+        clear_window()
+    elif level_of_difficulty == 'medium':
         print("\n you choose 'MEDIUM' level")
         word = random.choice(word_medium).upper()
-    elif level_of_difficulty == 'HARD':
+        clear_window()
+    elif level_of_difficulty == 'hard':
         print("\n you choose 'HARD' level")
         word = random.choice(word_hard).upper()
+        clear_window()
     else:
-        print('\n Enter the level in CAPITAL letters!!\n')
+        print('\n Enter the level you wish to play!!\n')
         print('==================================')
+        clear_window()
         list_of_words()
 
 
@@ -123,14 +129,15 @@ def restart_game():
     any other key to exit and game will exit
     """
 
-    print("\n Would you like to play again?")
+    print("\n Would you like to play again?\n")
     play_again = input(
-        "Please enter YES to play, any other key to exit the game \n")
+        " Please enter YES to play, any other key to exit the game \n\n")
     if play_again.lower() == "yes":
+        clear_window()
         game_instructions()
     else:
-        print("Thank you for playing the game")
-        exit()
+        print("Thank you for playing the game\n\n")
+        sys.exit()
 
 
 def hangman_game():
@@ -162,15 +169,24 @@ def hangman_game():
         print(chances, 'lives left')
         guess = input(" ").upper()
         if len(guess) != 1:
+            clear_window()
             print(' Please enter only one letter.')
+            print(graphic_man[counting_hangman])
         elif not guess.isalpha():
-            print(' Please enter only alphabet')    
+            clear_window()
+            print(' Please enter only alphabet')
+            print(graphic_man[counting_hangman])   
         elif guess in guessed_letters or guess in wrong_guess:
+            clear_window()
             print(' Already guessed', guess)
+            print(graphic_man[counting_hangman])
         elif guess in word:
+            clear_window()
             print(' Awesome Job! You guessed the correct letter!\n')
             guessed_letters.append(guess)
+            print(graphic_man[counting_hangman])
         else:
+            clear_window()
             print(' Sorry! You have guessed a wrong letter!')
             counting_hangman = counting_hangman + 1
             chances = chances-1
@@ -180,11 +196,15 @@ def hangman_game():
     if chances > 0:
         print(f" You guessed it right, the word is {word} !!!")
         print('======================================')
+        time.sleep(1)
         restart_game()
+        clear_window()
     else:
         print(' Sorry run out of chances. Try again.')
-        print('======================================')
+        print('======================================\n')
+        time.sleep(1)
         restart_game()
+        clear_window()
 
 
 def game_instructions():
@@ -207,16 +227,19 @@ def game_instructions():
             print(' - The computer will generate random word \n\n'
                   ' - you have to guess the letters in the word\n\n'
                   ' - type the alphabet in the word and hit enter button\n\n'
-                  ' - you have 6 chances\n\n'
+                  ' - you have 7 chances\n\n'
                   ' - if it is wrong guess you will loose a chance\n\n'
                   ' - Good Luck!\n')
             list_of_words()
             hangman_game()
+            clear_window()
         elif options == '3':
+            clear_window()
             print('\n Thanks for trying, please come back later\n')
             break
         else:
-            print('\n Sorry please enter 1, 2 or 3')
+            clear_window()
+            print('\n Sorry please enter 1, 2 or 3\n')
 
 
 game_instructions()
