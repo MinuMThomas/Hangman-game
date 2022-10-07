@@ -1,7 +1,37 @@
 # Hangman Game
-Hangman is an old school favorite, a word game where the goal is simply to find the missing word or words. You will be presented with a number of blank spaces representing the missing letters you need to find.
+Hangman is a word game where the goal is simply to find the missing word or words. 
+You will be presented with a number of blank spaces representing the missing letters you need to find.
 
-Use the keyboard to guess a letter (I recommend starting with vowels).
+
+View live site here! <a href="https://myfirst-hangman-game.herokuapp.com/">link</a>
+
+![Image of the website!](./image/responsiveimg.png "image of the site")
+## UX
+
+#### User Stories
+First time users
+- As a user I want enjoy playing word game.
+- As a user I wants to have clear feedback for their action
+- As a user I want to navigate to pages easily 
+- As a user I want to play and get appropriate message based on game progress 
+- As a user I want the site to be intuitive looking
+- As a user I want to know how to select different level of game
+- As a user I want to see visual effect of the game 
+
+#### Returning users
+
+- As a returning user of the site, I want to be able to quickly find information about game 
+- As a returning user of the site, I want to be able to quickly start the game 
+
+#### Site owner
+
+- As an owner of the site, I want to let people enjoy the game  
+- As an owner of the site, I want to give options for different levels of game 
+- As an owner of the site, I want the game easily available for new user.
+- As an owner of the site, I want to display the game progress for each user input 
+- As an owner of the site, I want the game site to be easily navigating and functioning  
+ 
+#### Site structure
 
 If your chosen letter exists in the answer, then all places in the answer where that letter appear will be revealed.
 
@@ -11,38 +41,9 @@ Be warned, every time you guess a letter wrong you loose a life and the hangman 
 
 Solve the puzzle before the hangman dies
 
-
-View live website here! <a href="">link</a>
-
-![Responsive image of the website!](/assets/image/responsive%20image%20readme.png "responsive image of the website")
-## UX
-
-#### User Stories
-First time users
-- As a user of the site, I want to learn about the programmes offered 
-- As a user of the site, I want to learn how to join the programmes 
-- As a fist time user of the site, I want to navigate social media links 
-- As a user of the site. I want to be able to navigate easily from multiple devices 
-- As a user of the site, I want the site to be intuitive  and professional looking.
-- As a user of the site, I want to learn how to select a programme and enroll 
-- As a user of the site, I want to know enrollment was success or not 
-
-#### Returning users
-
-- As a returning user of the site, I want to be able to quickly find information about various cooking programmes 
-- As a returning user of the site, I want to be able to quickly enrol for a cooking programme 
-
-#### Site owner
-
-- As an owner of the site, I want to highlight cooking courses  
-- As an owner of the site, I want to show different dishes prepared by course participants
-- As an owner of the site, I want to have enrollment forms easily available for new clients.
-- As an owner of the site, I want to display an acknowledgement page when a customer enrols for a programme 
-- As an owner of the site, I want the site to be fully responsive 
- 
-#### Site structure
-
-- The home page will have a main banner with large hero image, main title and subtitle and content. 
+- The home page will have a main banner with large ascii art image of main title.
+- Use the keyboard to guess a letter
+-If your chosen letter exists in the answer, then all places in the answer where that letter appear will be revealed.
 - The site will have a navigation menu in the top right, consistent on all pages
 - The navigation menu will change to a hamburger menu on mobile and tablet devices 
 - The main page will have 4 small images along with taglines to highlight the courses 
@@ -61,9 +62,7 @@ Students Corner
 
 
 
-**Development**
 
-This simple website developed for a user to join online cooking class for south Indian dishes. The development research done to get the basic idea of online enrolment to a course and specific cooking modules for students to join.
 
 ### Strategy
 .
@@ -87,34 +86,51 @@ Made with Balsamiq
 
 
 **Structure**
-The information and features was made into a easy to follow and read structure, with clear directions.
-Structure made with Balsamiq
+The flowchart made during the planning stage of the project. The detalied flowchart shows the structure of the game plan and it was helpful for the difeerent stages of development of the game.   
 
-Wireframe 
-![Wireframe of the website Home page!](/assets/image/Home%20Page.png  "wireframe of home page")
-
-![Second page](/assets/image/Students%20Corner.png "wireframe of food image page")
-
-![Sign in form](/assets/image/Form%20.png  "wireframe of home page")
-
-![Thank you page](/assets/image/Thankyou%20Page.png "wireframe of home page")
+Flowchart
+![flowchart of the project!](./image/Flowcharts.png  "wireframe of home page")
 
 
 
 ## Features
 
-- **The website**
+- welcome message with user name
+- user can choose from start, instructions or exit
+- user can select different level of game
+- user can see the graphical representaion of a hangman throughout the game 
+- user can choose restart the game or exit the game 
+
+- **The site**
 
 - **game plan**
-![](/assets/image/nav%20bar.png "image of navigation page")
+- Upon loading the page, a large logo ascii art displays and asks the user to input
+  their name
+
+   ![The first page](./image/pone.png "image of first page") 
+
+- It's important to give a input, user can enter any letters. When the user completes
+  entering their name, a welcome message with their name appears.
+  ![uername with welcome message](./image/ptwo.png "image of navigation page")
+  ![options to choose](./image/pthree.png "image of navigation page")
+
+- User will be asked if they want to start game or instruction or exit the game. The
+  user input will validate each time and appropriate feedback will be given for invalid data entry. Also the screen will be cleared after long instruction and options will appear after 6seconds
+  
+  ![levels to choose](./image/pfour.png "image of navigation page")
+  ![levels to choose](./image/psix.png "image of navigation page")
+- At the start option the user has to choose from three levels such as easy, medium
+  and hard. Again the input will validate each time and appropriate feedback will be given for invalid data entry.
+
+  ![levels to choose](./image/pseven.png "image of navigation page")
+
+- Word will be selected randomly from the preffered level. User is asked to guess the word and enter one alphabet. The underscores and lives will display. These underscores represents the number of letters in the word selected as the answer.  
+
+![asked to guess the letter](./image/peight.png "image of navigation page")
+
+- 
 
 
-
-- **Form page includes enrolment form and contact us details**
-![The form page](/assets/image/formPic.png "image of form page")
-
-- **once hitting the enroll-now button, that will leads to a Thank you page**
-![Thank you page](/assets/image/thanksP.png "image of thank you page")
 ## Technologies Used
 
 Main Language Used
@@ -131,7 +147,6 @@ Main Language Used
 - Tested dropdown button functions on enrollment form 
 - Tested success message alert when enrollment is completed 
 - Tested thank you page is displayed after submitting enrollment form 
-- Tested all social media links 
 - Tested on Chrome, Safari and Firefox browsers
 - Tested on Desktop, Laptop, iPad and mobile phones
 
@@ -143,7 +158,23 @@ Main Language Used
  
 #### Project deployment steps below
 
-- Open Heroku
+- This project was developed using a GitPod workspace. The code was committed to Git
+  and pushed to GitHub using the terminal.
+- To deploy this page to Heroku from its GitHub repository, the following steps were
+  taken
+- Create the Heroku App:
+- Choose Create new app in Heroku
+- enter the project name
+- select Europe as region, then click Create app button.
+- In settings page, choose Buildpack section, choose python and save then choose
+  nodejs and save change accordingly.
+- must then create a _Config Var_ called `PORT`. Set this to `8000`  
+- go to deploy page, Connect to GitHub and authorize and in Git Hub repositories
+  search for the project and connect.
+- choose  manual deploy or Automatic Deploys.
+- Once the deployment completed click the view bitton to open the project in new
+  window
+
 - 
 
 ## Unfixed bugs
@@ -152,7 +183,7 @@ No unfixed bugs
 ## Credits and Reference
 
 - W3School  
-- README.md of cookbook project (add link)
+- README.md of my own project cookbook  (add link)
 - coding-boot-camp- professional-readme-guide
 
 
@@ -161,23 +192,3 @@ No unfixed bugs
 
 - Thanks to my mentor, for the guidence.
 - Thanks to Cohort Facilitators
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
-
------
-Happy coding!
