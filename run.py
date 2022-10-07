@@ -97,7 +97,7 @@ def list_of_words():
     word_hard = ['chronological', 'lacrosse', 'copyright', 'glamorous',
                  'unforeseen', 'glamorous', 'vengeance', 'optimistic',
                  'noticeable', 'vengeance', 'consensus', 'recollection']
-    print(' \nPlease choose a level and enter it to begin the game !!\n'
+    print(' \n Please choose a level and enter it to begin the game !!\n'
           '\n* EASY\n \n* MEDIUM\n \n* HARD \n')
     level_of_difficulty = input('\n').lower()
     if level_of_difficulty == 'easy':
@@ -166,24 +166,24 @@ def hangman_game():
         guess = input(" ").upper()
         if len(guess) != 1:
             clear_window()
-            print(' \nPlease enter only one letter.\n')
+            print(' \n Please enter only one letter.\n')
             print(graphic_man[counting_hangman])
         elif not guess.isalpha():
             clear_window()
-            print(' \nPlease enter only alphabet\n')
+            print(' \n Please enter only alphabet\n')
             print(graphic_man[counting_hangman])
         elif guess in guessed_letters or guess in wrong_guess:
             clear_window()
-            print(' \nAlready guessed\n', guess)
+            print(' \n Already guessed\n', guess)
             print(graphic_man[counting_hangman])
         elif guess in word:
             clear_window()
-            print(' \nAwesome Job! You guessed the correct letter!\n')
+            print(' \n Awesome Job! You guessed the correct letter!\n')
             guessed_letters.append(guess)
             print(graphic_man[counting_hangman])
         else:
             clear_window()
-            print(' \nSorry! You have guessed a wrong letter!\n')
+            print(' \n Sorry! You have guessed a wrong letter!\n')
             counting_hangman = counting_hangman + 1
             chances = chances-1
             wrong_guess.append(guess)
