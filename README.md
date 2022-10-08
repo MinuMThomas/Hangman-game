@@ -8,14 +8,15 @@ View live site here! <a href="https://myfirst-hangman-game.herokuapp.com/">link<
 ![Image of the site!](./image/responsiveimg.png "image of the site")
  
 ## Table of content
+
+
 - [Hangman Game](#hangman-game)
+  * [Table of content](#table-of-content)
   * [UX](#ux)
       - [User Stories](#user-stories)
       - [Returning users](#returning-users)
       - [Site owner](#site-owner)
       - [Site structure](#site-structure)
-      - [Home page](#home-page)
-      - [Join Us Page](#join-us-page)
   * [Features](#features)
   * [Technologies Used](#technologies-used)
   * [Validator Testing](#validator-testing)
@@ -25,9 +26,6 @@ View live site here! <a href="https://myfirst-hangman-game.herokuapp.com/">link<
   * [Unfixed bugs](#unfixed-bugs)
   * [Credits and Reference](#credits-and-reference)
   * [Acknowledgements](#acknowledgements)
-
-
-
 
 
 ## UX
@@ -151,17 +149,23 @@ Main Language Used
 ## Validator Testing
 
 - code validated by PEP8 validator which installed in gitpod
-- there is no major errors in the code except 13 yellow warning signs
+- there is no major errors in the code except 10 warning signs 
 
+![pep8 validaton](./image/pep8validation.png "image of validation")
 
 ## Manual testing
 - Tested navigation works on all stages of the game
 - Tested input name function
 - Tested option selection
 - Tested game level selection
-- Tested the complete game
-- Tested on Chrome, Safari and Firefox browser
-- Tested on Desktop, Laptop, iPad and mobile phones with chrome/firefox browser
+- Tested the complete game, and all the inputs user should put a  
+  valid entry.
+- Tested on Chrome, and Firefox browser
+- Tested on Desktop, Laptop, iPad and mobile phones 
+
+- There is an error in testing the site on safari browser, it is a 
+  known issue with emulator and tutor support confirmed the same. 
+
 
 
 ## Deployment
@@ -175,19 +179,34 @@ Main Language Used
 - To deploy this page to Heroku from its GitHub repository, the following steps
    were taken
 - Create the Heroku App:
-- Choose Create new app in Heroku
-- enter the project name
-- select Europe as region, then click Create app button.
-- In settings page, choose Buildpack section, choose python and save then choose
-  nodejs and save change accordingly.
-- must then create a _Config Var_ called `PORT`. Set this to `8000`  
-- go to deploy page, Connect to GitHub and authorize and in Git Hub repositories
-  search for the project and connect.
-- choose  manual deploy or Automatic Deploys.
-- Once the deployment completed click the view bitton to open the project in new
-  window
+    - Choose Create new app in Heroku
+    - enter the project name
+    - select Europe as region, then click Create app button.
+    - In settings page, choose Buildpack section, choose python and save then choose
+      nodejs and save change accordingly.
+    - must then create a _Config Var_ called `PORT`. Set this to `8000`  
+    - go to deploy page, Connect to GitHub and authorize and in Git Hub repositories
+      search for the project and connect.
+    - choose  manual deploy or Automatic Deploys.
+    - Once the deployment completed click the view bitton to open the project in new
+      window
 
-- 
+**Forking a Repository**
+- On GitHub.com, navigate to the octocat/Spoon-Knife repository.
+- In the top-right corner of the page, click Fork.
+- Select an owner for the forked repository.
+- By default, forks are named the same as their parent    
+  repositories.
+- Optionally, add a description of your fork.  
+
+**Cloning a Repository**
+- On GitHub.com, navigate to the main page of the repository.
+- Above the list of files, click Code.
+- Copy the URL for the repository. 
+- Click on HTTP section you will see the http of the repository 
+  click on the window next to it it will say copied
+- Change the current working directory to the location where you 
+  want the cloned directory.
 
 ## Unfixed bugs
 No unfixed bugs
@@ -199,7 +218,8 @@ No unfixed bugs
 - coding-boot-camp- professional-readme-guide
 - Ascii art <a href="https://www.asciiart.eu/">link</a>
 - Lucid chart app <a href="https://www.lucidchart.com/pages/">link</a>
-- Table of contents generated with markdown-toc<a href='http://ecotrust-canada.github.io/markdown-toc/'></a>
+- Table of contents generated with markdown-toc <a href='http://ecotrust-canada.github.io/markdown-toc/'>link</a>
+- Github docs <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository">link</a>
 
 
 
