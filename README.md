@@ -85,20 +85,21 @@ Flowchart
 - user can choose restart the game or exit the game 
 
 
-- **Game plan**
+**Game plan**
 - Upon loading the page, a large logo ascii art displays and asks
   the user to input their name.
 
    ![The first page](./image/pone.png "image of first page") 
 
-- It's important to give a input, user can enter any letters. When the user completes
+- It's important to give a input, user can enter any letters. When the user
+  completes
   entering their name, a welcome message with their name appears.
   ![uername with welcome message](./image/ptwo.png "image of navigation page")
   ![options to choose](./image/pthree.png "image of navigation page")
 
 - User will be asked if they want to start game or instruction or exit the game. The user input will validate each time
   and appropriate feedback will be given for invalid data entry. Also the screen will be cleared after long instruction
-  and options to choose level will appear after 6seconds
+  and options to choose level will appear after pressing enter button
   
   ![levels to choose](./image/pfour.png "image of navigation page")
   ![levels to choose](./image/psix.png "image of navigation page")
@@ -193,7 +194,7 @@ Main Language Used
       window
 
 ## Forking a Repository
-- On GitHub.com, navigate to the octocat/Spoon-Knife repository.
+- On GitHub.com, navigate to the repository.
 - In the top-right corner of the page, click Fork.
 - Select an owner for the forked repository.
 - By default, forks are named the same as their parent    
