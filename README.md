@@ -223,6 +223,7 @@ No unfixed bugs
 - Stackoverflow used for clearing coding doubts and refer code<a href="https://stackoverflow.com/">link</a> 
 - Hangman image reference from 'The big book of small 
   Python Projects <a href="https://inventwithpython.com/bigbookpython/">link</a>
+- Beginers guide to Python <a href="https://realpython.com/python-time-module/">link</a>  
 
 
 
