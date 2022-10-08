@@ -13,6 +13,8 @@ def hangman_image():
     global graphic_man
 
     graphic_man = ["""
+    * | *
+      -  """, """
     +---+
         |
         |
@@ -149,7 +151,7 @@ def hangman_game():
     guessed_letters = []
     wrong_guess = []
     chances = 7
-    counting_hangman = -1
+    counting_hangman = 0
     alphabet = input
     while chances > 0:
         output = ''

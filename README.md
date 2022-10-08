@@ -98,14 +98,15 @@ Flowchart
 - welcome message with user name
 - user can choose from start, instructions or exit
 - user can select different level of game
-- user can see the graphical representaion of a hangman throughout the game 
+- user can see the graphical representaion of a hangman
+  throughout the game 
 - user can choose restart the game or exit the game 
 
 - **The site**
 
 - **game plan**
-- Upon loading the page, a large logo ascii art displays and asks the user to input
-  their name
+- Upon loading the page, a large logo ascii art displays and asks
+  the user to input their name.
 
    ![The first page](./image/pone.png "image of first page") 
 
@@ -115,18 +116,29 @@ Flowchart
   ![options to choose](./image/pthree.png "image of navigation page")
 
 - User will be asked if they want to start game or instruction or exit the game. The
-  user input will validate each time and appropriate feedback will be given for invalid data entry. Also the screen will be cleared after long instruction and options will appear after 6seconds
+  user input will validate each time and appropriate feedback will be given for invalid data entry. Also the screen will be cleared after long instruction and options to choose level will appear after 6seconds
   
   ![levels to choose](./image/pfour.png "image of navigation page")
   ![levels to choose](./image/psix.png "image of navigation page")
-- At the start option the user has to choose from three levels such as easy, medium
+- At the start option the user has to choose
+  from three levels such as easy, medium
   and hard. Again the input will validate each time and appropriate feedback will be given for invalid data entry.
 
   ![levels to choose](./image/pseven.png "image of navigation page")
 
-- Word will be selected randomly from the preffered level. User is asked to guess the word and enter one alphabet. The underscores and lives will display. These underscores represents the number of letters in the word selected as the answer.  
+- Word will be selected randomly from the
+  preffered level. User is asked to guess the word and enter one alphabet. The 
+  underscores and lives will display. These underscores represents the number of letters in the word selected as the answer.  
 
-![asked to guess the letter](./image/peight.png "image of navigation page")
+  ![asked to guess the letter](./image/peight.png "image of navigation page")
+
+-  If the input is correct, the letter will replaces the
+   underscore. If the input letter not in the slected word then user will loose alife in the game. In both case user will get notified. After each entry the screen will be clearout and answers will be displayed
+
+   ![user input and display](./image/guesswrong.png "image of navigation page")
+
+   ![user input and display](./image/guesswrong.png "image of navigation page")
+
 
 - 
 
