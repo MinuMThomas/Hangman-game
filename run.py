@@ -1,3 +1,6 @@
+"""
+hangman game
+"""
 import random
 import os
 import time
@@ -55,6 +58,7 @@ def hangman_image():
 def clear_window():
     """
     Clears the game window
+    the code is taken from stack overflow
     """
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -131,7 +135,7 @@ def restart_game():
 
     print("\n Would you like to play again?\n")
     play_again = input(
-        " Please enter YES to play, any other key to exit the game \n\n")
+        " Please enter YES to play, enter key to exit the game \n\n")
     if play_again.lower() == "yes":
         clear_window()
         game_instructions()
@@ -231,8 +235,9 @@ def game_instructions():
                   ' - type the alphabet in the word and hit enter button\n\n'
                   ' - you have 7 chances\n\n'
                   ' - if it is wrong guess you will loose a chance\n\n'
-                  ' - Good Luck!\n')
-            time.sleep(6)
+                  ' - Good Luck!\n\n\n'
+                  )
+            print(input('Press enter key to begin the game\n'))
             clear_window()
             list_of_words()
             hangman_game()
