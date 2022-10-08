@@ -216,11 +216,13 @@ No unfixed bugs
 
 - W3School  
 - README.md of my own project cookbook  <a href="https://myfirst-hangman-game.herokuapp.com/">link</a>
-- coding-boot-camp- professional-readme-guide
-- Ascii art <a href="https://www.asciiart.eu/">link</a>
-- Lucid chart app <a href="https://www.lucidchart.com/pages/">link</a>
+- Ascii art used to create the hangman image<a href="https://www.asciiart.eu/">link</a>
+- Lucid chart app used to create the chart <a href="https://www.lucidchart.com/pages/">link</a>
 - Table of contents generated with markdown-toc <a href='http://ecotrust-canada.github.io/markdown-toc/'>link</a>
-- Github docs <a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository">link</a>
+- Github docs used to get git forking and cloning steps<a href="https://docs.github.com/en/get-started/quickstart/fork-a-repo#cloning-your-forked-repository">link</a>
+- Stackoverflow used for clearing coding doubts and refer code<a href="https://stackoverflow.com/">link</a> 
+- Hangman image reference from 'The big book of small 
+  Python Projects <a href="https://inventwithpython.com/bigbookpython/">link</a>
 
 
 
