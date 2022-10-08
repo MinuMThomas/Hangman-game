@@ -136,6 +136,7 @@ def restart_game():
         clear_window()
         game_instructions()
     else:
+        clear_window()
         print("Thank you for playing the game\n\n")
         sys.exit()
 

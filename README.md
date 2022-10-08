@@ -115,8 +115,9 @@ Flowchart
   ![uername with welcome message](./image/ptwo.png "image of navigation page")
   ![options to choose](./image/pthree.png "image of navigation page")
 
-- User will be asked if they want to start game or instruction or exit the game. The
-  user input will validate each time and appropriate feedback will be given for invalid data entry. Also the screen will be cleared after long instruction and options to choose level will appear after 6seconds
+- User will be asked if they want to start game or instruction or exit the game. The user input will validate each time
+  and appropriate feedback will be given for invalid data entry. Also the screen will be cleared after long instruction
+  and options to choose level will appear after 6seconds
   
   ![levels to choose](./image/pfour.png "image of navigation page")
   ![levels to choose](./image/psix.png "image of navigation page")
@@ -132,12 +133,14 @@ Flowchart
 
   ![asked to guess the letter](./image/peight.png "image of navigation page")
 
--  If the input is correct, the letter will replaces the
-   underscore. If the input letter not in the slected word then user will loose alife in the game. In both case user will get notified. After each entry the screen will be clearout and answers will be displayed
+-  If the first input is correct, the letter will replaces the underscore and smiling face of graphical representation
+   appear and it will show if the user correctly enter all the letters. If the input letter not in the slected word then
+   user will loose alife in the game. In both case user will get notified. After each entry the screen will be clearout
+   and answers will be displayed
 
    ![user input and display](./image/guesswrong.png "image of navigation page")
 
-   ![user input and display](./image/guesswrong.png "image of navigation page")
+   ![user input and display](./image "image of navigation page")
 
 
 - 
