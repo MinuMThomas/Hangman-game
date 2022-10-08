@@ -26,7 +26,6 @@ View live site here! <a href="https://myfirst-hangman-game.herokuapp.com/">link<
   * [Credits and Reference](#credits-and-reference)
   * [Acknowledgements](#acknowledgements)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
 
@@ -219,7 +218,7 @@ No unfixed bugs
 - coding-boot-camp- professional-readme-guide
 - Ascii art <a href="https://www.asciiart.eu/">link</a>
 - Lucid chart app <a href="https://www.lucidchart.com/pages/">link</a>
-- Markdown toc library <a href="http://ecotrust-canada.github.io/markdown-toc/">link</a>
+- Table of contents generated with markdown-toc<a href='http://ecotrust-canada.github.io/markdown-toc/'></a>
 
 
 
