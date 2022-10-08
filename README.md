@@ -54,36 +54,18 @@ First time users
 - As an owner of the site, I want the game easily available for new user.
 - As an owner of the site, I want to display the game progress for each user input 
 - As an owner of the site, I want the game site to be easily navigating and functioning  
+
  
 #### Site structure
 
-If your chosen letter exists in the answer, then all places in the answer where that letter appear will be revealed.
-
-After you've revealed several letters, you may be able to guess what the answer is and fill in the remaining letters.
-
-Be warned, every time you guess a letter wrong you loose a life and the hangman begins to appear, piece by piece.
-
-Solve the puzzle before the hangman dies
-
 - The home page will have a main banner with large ascii art image of main title.
 - Use the keyboard to guess a letter
-- If your chosen letter exists in the answer, then all places in the answer where
+- The chosen letter exists in the answer, then all places in the answer where
   that letter appear will be revealed.
-- The site will have a navigation menu in the top right, consistent on all pages
-- The navigation menu will change to a hamburger menu on mobile and tablet devices 
-- The main page will have 4 small images along with taglines to highlight the courses 
-- The second page will display images of dishes prepared  by participants,  8 images along with taglines 
-- The third page will have a enrollment form and programme selection dropdown. 
+- Every wrong letter entry user loose a life and the hangman begins to appear
+- Word should be guessed before hangman dies or user will loose all chances.
+- After loosing all chance or winning the game, user will be asked for replay or exit the game.
  
-- All pages will also contain a section at the bottom of the page which includes  social media links
-#### Home page
-- The home page will contain some introductory text about what the site does and what offer to clients.
- 
-- There will also be an image with relevant taglines that fits in with the site design.
-Students Corner
-- The about page will contain images of dishes prepared by students along with taglines
-#### Join Us Page
-- The contact page will contain an enrollment  form so users can submit their details, the form will require name, phone, email, and programme selection tool. The system will display a thankyou page based on successful submission of enrollment form.
 
 
 **Structure**
