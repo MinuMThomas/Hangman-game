@@ -10,9 +10,9 @@ def hangman_image():
     hangman graghic with different stages
     grapic image will show when input is wrong
     """
-    global graphic_man
+    global GRAPHIC_MAN
 
-    graphic_man = ["""
+    GRAPHIC_MAN = ["""
     * | *
       -  """, """
     +---+
@@ -89,7 +89,7 @@ def list_of_words():
     list of words included with four types easy,  medium and hard
     user can choose level to play
     """
-    global word
+    global WORD
     word_easy = ['baby', 'back', 'bad', 'bag', 'ball', 'call', 'can',
                  'candle', 'cap', 'car', 'card', 'care', 'ear', 'early',
                  'earn', 'earth', 'east', 'easy', 'jelly', 'job', 'join']
@@ -104,15 +104,15 @@ def list_of_words():
     level_of_difficulty = input('\n').lower()
     if level_of_difficulty == 'easy':
         print("\n you choose 'EASY' level")
-        word = random.choice(word_easy).upper()
+        WORD = random.choice(word_easy).upper()
         clear_window()
     elif level_of_difficulty == 'medium':
         print("\n you choose 'MEDIUM' level")
-        word = random.choice(word_medium).upper()
+        WORD = random.choice(word_medium).upper()
         clear_window()
     elif level_of_difficulty == 'hard':
         print("\n you choose 'HARD' level")
-        word = random.choice(word_hard).upper()
+        WORD = random.choice(word_hard).upper()
         clear_window()
     else:
         print('\n Enter the level you wish to play!!\n')
@@ -156,12 +156,12 @@ def hangman_game():
     alphabet = input
     while chances > 0:
         output = ''
-        for alphabet in word:
+        for alphabet in WORD:
             if alphabet in guessed_letters:
                 output += alphabet
             else:
                 output += '_ '
-        if output == word:
+        if output == WORD:
             break
         print('===================================')
         print(' Guess the word: ', output)
@@ -170,30 +170,30 @@ def hangman_game():
         if len(guess) != 1:
             clear_window()
             print(' \n Please enter only one letter.\n')
-            print(graphic_man[counting_hangman])
+            print(GRAPHIC_MAN[counting_hangman])
         elif not guess.isalpha():
             clear_window()
             print(' \n Please enter only alphabet\n')
-            print(graphic_man[counting_hangman])
+            print(GRAPHIC_MAN[counting_hangman])
         elif guess in guessed_letters or guess in wrong_guess:
             clear_window()
             print(' \n Already guessed\n', guess)
-            print(graphic_man[counting_hangman])
-        elif guess in word:
+            print(GRAPHIC_MAN[counting_hangman])
+        elif guess in WORD:
             clear_window()
             print(' \n Awesome Job! You guessed the correct letter!\n')
             guessed_letters.append(guess)
-            print(graphic_man[counting_hangman])
+            print(GRAPHIC_MAN[counting_hangman])
         else:
             clear_window()
             print(' \n Sorry! You have guessed a wrong letter!\n')
             counting_hangman = counting_hangman + 1
             chances = chances-1
             wrong_guess.append(guess)
-            print(graphic_man[counting_hangman])
+            print(GRAPHIC_MAN[counting_hangman])
 
     if chances > 0:
-        print(f" You guessed it right, the word is {word} !!!")
+        print(f" You guessed it right, the word is {WORD} !!!")
         print('======================================')
         time.sleep(0.5)
         restart_game()

@@ -55,7 +55,7 @@ First time users
 - As an owner of the site, I want to display the game progress for each user input 
 - As an owner of the site, I want the game site to be easily navigating and functioning  
 
- 
+
 #### Site structure
 
 - The home page will have a main banner with large ascii art image of main title.
@@ -85,9 +85,8 @@ Flowchart
   throughout the game 
 - user can choose restart the game or exit the game 
 
-- **The site**
 
-- **game plan**
+- **Game plan**
 - Upon loading the page, a large logo ascii art displays and asks
   the user to input their name.
 
@@ -152,7 +151,7 @@ Main Language Used
 ## Validator Testing
 
 - code validated by PEP8 validator which installed in gitpod
--  there is no major errors in the code except 13 yellow warning signs
+- there is no major errors in the code except 13 yellow warning signs
 
 
 ## Manual testing
