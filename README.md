@@ -9,7 +9,6 @@ View live site here! <a href="https://myfirst-hangman-game.herokuapp.com/">link<
  
 ## Table of content
 
-
 - [Hangman Game](#hangman-game)
   * [Table of content](#table-of-content)
   * [UX](#ux)
@@ -23,10 +22,12 @@ View live site here! <a href="https://myfirst-hangman-game.herokuapp.com/">link<
   * [Manual testing](#manual-testing)
   * [Deployment](#deployment)
       - [Project deployment steps below](#project-deployment-steps-below)
+  * [Forking a Repository](#forking-a-repository)
+  * [Cloning a Repository**](#cloning-a-repository--)
   * [Unfixed bugs](#unfixed-bugs)
   * [Credits and Reference](#credits-and-reference)
   * [Acknowledgements](#acknowledgements)
-
+  
 
 ## UX
 
@@ -191,7 +192,7 @@ Main Language Used
     - Once the deployment completed click the view bitton to open the project in new
       window
 
-**Forking a Repository**
+## Forking a Repository
 - On GitHub.com, navigate to the octocat/Spoon-Knife repository.
 - In the top-right corner of the page, click Fork.
 - Select an owner for the forked repository.
@@ -199,7 +200,7 @@ Main Language Used
   repositories.
 - Optionally, add a description of your fork.  
 
-**Cloning a Repository**
+## Cloning a Repository**
 - On GitHub.com, navigate to the main page of the repository.
 - Above the list of files, click Code.
 - Copy the URL for the repository. 
@@ -225,5 +226,5 @@ No unfixed bugs
 
 ## Acknowledgements
 
-- Thanks to my mentor, for the guidence throught the project.
+- Thanks to my mentor, for the guidence throughout the project.
 - Thanks to Cohort Facilitators
