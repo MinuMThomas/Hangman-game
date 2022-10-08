@@ -5,7 +5,32 @@ You will be presented with a number of blank spaces representing the missing let
 
 View live site here! <a href="https://myfirst-hangman-game.herokuapp.com/">link</a>
 
-![Image of the website!](./image/responsiveimg.png "image of the site")
+![Image of the site!](./image/responsiveimg.png "image of the site")
+ 
+## Table of content
+- [Hangman Game](#hangman-game)
+  * [UX](#ux)
+      - [User Stories](#user-stories)
+      - [Returning users](#returning-users)
+      - [Site owner](#site-owner)
+      - [Site structure](#site-structure)
+      - [Home page](#home-page)
+      - [Join Us Page](#join-us-page)
+  * [Features](#features)
+  * [Technologies Used](#technologies-used)
+  * [Validator Testing](#validator-testing)
+  * [Manual testing](#manual-testing)
+  * [Deployment](#deployment)
+      - [Project deployment steps below](#project-deployment-steps-below)
+  * [Unfixed bugs](#unfixed-bugs)
+  * [Credits and Reference](#credits-and-reference)
+  * [Acknowledgements](#acknowledgements)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
+
+
 ## UX
 
 #### User Stories
@@ -193,6 +218,8 @@ No unfixed bugs
 - README.md of my own project cookbook  <a href="https://myfirst-hangman-game.herokuapp.com/">link</a>
 - coding-boot-camp- professional-readme-guide
 - Ascii art <a href="https://www.asciiart.eu/">link</a>
+- Lucid chart app <a href="https://www.lucidchart.com/pages/">link</a>
+- Markdown toc library <a href="http://ecotrust-canada.github.io/markdown-toc/">link</a>
 
 
 
