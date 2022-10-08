@@ -43,7 +43,8 @@ Solve the puzzle before the hangman dies
 
 - The home page will have a main banner with large ascii art image of main title.
 - Use the keyboard to guess a letter
--If your chosen letter exists in the answer, then all places in the answer where that letter appear will be revealed.
+- If your chosen letter exists in the answer, then all places in the answer where
+  that letter appear will be revealed.
 - The site will have a navigation menu in the top right, consistent on all pages
 - The navigation menu will change to a hamburger menu on mobile and tablet devices 
 - The main page will have 4 small images along with taglines to highlight the courses 
@@ -59,30 +60,6 @@ Students Corner
 - The about page will contain images of dishes prepared by students along with taglines
 #### Join Us Page
 - The contact page will contain an enrollment  form so users can submit their details, the form will require name, phone, email, and programme selection tool. The system will display a thankyou page based on successful submission of enrollment form.
-
-
-
-
-
-### Strategy
-.
-
-
-## Scope
-
-
-
-
-__Funtional Reqirements__
-
-
-
-
-**Skeleton**
-The skeleton wireframe was made to give a clean and easy to use experiance.
-Made with Balsamiq
-
-![Skeleton of the website!](/assets/image/skeleton.png)
 
 
 **Structure**
@@ -133,17 +110,32 @@ Flowchart
 
   ![asked to guess the letter](./image/peight.png "image of navigation page")
 
--  If the first input is correct, the letter will replaces the underscore and smiling face of graphical representation
+-  If the first input is correct, the letter will replaces the underscore and
+   smiling face of graphical representation
    appear and it will show if the user correctly enter all the letters. If the input letter not in the slected word then
-   user will loose alife in the game. In both case user will get notified. After each entry the screen will be clearout
-   and answers will be displayed
+   user will loose alife in the game and graphical image of hangman will start to show. In both case user will get notified. After each entry the screen will be clearout and answers will be displayed.
 
-   ![user input and display](./image/guesswrong.png "image of navigation page")
+   ![first correct input display](./image/firstcorrect.png "image of navigation page")
 
-   ![user input and display](./image "image of navigation page")
+   ![complete correct answer display](./image/compeletcorrect.png"image of navigation page")
 
+   ![first wrong input display](./image/firstwrong.png "image of navigation page")
+   
+     
+     - for all incorrect input, that is other than a single alphabet, user will be 
+       notified and lives will not be counted.
+    
+      ![user input and display](./image/onlyone.png "image of navigation page")
 
-- 
+      ![user input and display](./image/onlyalpha.png "image of navigation page")
+
+-  Game will be over when the user answer all correct letters  or the hangman
+   image completely displays. The user will now be asked if they want to start
+   another game or exit.
+
+  ![user input and display](./image/finalword.png "image of navigation page")
+
+  ![user input and display](./image/runoutofchance.png "image of navigation page")
 
 
 ## Technologies Used
@@ -153,30 +145,30 @@ Main Language Used
 
 ## Validator Testing
 
--  validation links
+- code validated by PEP8 validator which installed in gitpod
+-  there is no major errors in the code except 13 yellow warning signs
 
 
 ## Manual testing
-- Tested navigation works on all pages including links 
-- Tested enrollment form and its functionalities 
-- Tested dropdown button functions on enrollment form 
-- Tested success message alert when enrollment is completed 
-- Tested thank you page is displayed after submitting enrollment form 
-- Tested on Chrome, Safari and Firefox browsers
-- Tested on Desktop, Laptop, iPad and mobile phones
+- Tested navigation works on all stages of the game
+- Tested input name function
+- Tested option selection
+- Tested game level selection
+- Tested the complete game
+- Tested on Chrome, Safari and Firefox browser
+- Tested on Desktop, Laptop, iPad and mobile phones with chrome/firefox browser
 
 
 ## Deployment
 - The project was created in Github using the Code Institute’s full template
 - Github was used for code repository 
-
  
 #### Project deployment steps below
 
-- This project was developed using a GitPod workspace. The code was committed to Git
-  and pushed to GitHub using the terminal.
-- To deploy this page to Heroku from its GitHub repository, the following steps were
-  taken
+- This project was developed using a GitPod workspace. The code was committed to
+  Git and pushed to GitHub using the terminal.
+- To deploy this page to Heroku from its GitHub repository, the following steps
+   were taken
 - Create the Heroku App:
 - Choose Create new app in Heroku
 - enter the project name
@@ -198,12 +190,13 @@ No unfixed bugs
 ## Credits and Reference
 
 - W3School  
-- README.md of my own project cookbook  (add link)
+- README.md of my own project cookbook  <a href="https://myfirst-hangman-game.herokuapp.com/">link</a>
 - coding-boot-camp- professional-readme-guide
+- Ascii art <a href="https://www.asciiart.eu/">link</a>
 
 
 
 ## Acknowledgements
 
-- Thanks to my mentor, for the guidence.
+- Thanks to my mentor, for the guidence throught the project.
 - Thanks to Cohort Facilitators
